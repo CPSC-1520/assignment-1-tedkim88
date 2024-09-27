@@ -1,0 +1,24 @@
+{
+  "name": "assignment-1-auto-tests",
+  "version": "1.0.0",
+  "description": "Tests for assignment 1",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ../",
+    "start-silent": "http-server ../ -c-1 --silent",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:record": "cypress run --record --key",
+    "start-and-run": "start-server-and-test start-silent 8080 cypress:run",
+    "start-and-open": "start-server-and-test start-silent 8080 cypress:open"
+  },
+  "author": "Daniel Mouris",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.3.1",
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "start-server-and-test": "^2.0.0"
+  }
+}
